@@ -44,11 +44,9 @@ Examples:
 				fmt.Printf("Error: %v\n", err)
 				os.Exit(1)
 			}
-			fmt.Printf("\nCurrency Conversion\n")
-			fmt.Printf("━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n")
+			fmt.Printf("\nCurrency Conversion:\n\n")
 			fmt.Printf("  %.2f %s = %.2f %s\n", result.Amount, result.FromCurrency, result.Result, result.ToCurrency)
 			fmt.Printf("  Rate: 1 %s = %.4f %s\n", result.FromCurrency, result.Rate, result.ToCurrency)
-			fmt.Printf("━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n")
 			return
 		}
 
