@@ -1,19 +1,14 @@
 # 💱 Currency Converter
 
-Terminal tabanlı, güzel arayüzlü para birimi dönüştürücü. Bubble Tea (TUI) ve Cobra CLI ile geliştirilmiştir.
+Terminal tabanlı, temiz arayüzlü para birimi dönüştürücü. Bubble Tea (TUI) ve Cobra CLI ile geliştirilmiştir.
 
 ![Go](https://img.shields.io/badge/Go-1.21+-00ADD8?style=flat&logo=go)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
 
-## ✨ Özellikler
+## Özellikler
 
-- 🎨 **Güzel Terminal Arayüzü** - Bubble Tea ile interaktif TUI
-- 🔄 **Gerçek Zamanlı Kurlar** - ExchangeRate-API ile güncel döviz kurları
-- 💻 **Çift Mod** - İnteraktif TUI veya hızlı CLI komutları
-- 🔍 **Para Birimi Filtreleme** - Yazarak arama yapabilme
-- 🌍 **150+ Para Birimi** - Tüm dünya para birimleri desteklenir
+-  **Terminal Arayüzü** - Bubble Tea ile interaktif TUI, cobra CLI ile hızlı output.
 
-## 🚀 Kurulum
+## Kurulum
 
 ### Gereksinimler
 
@@ -47,23 +42,27 @@ cp .env.example .env
 
 ```bash
 go build -o currency-converter .
+//veya
+go build
+//ardından
+go run main.go
 ```
 
-## 📖 Kullanım
+## Kullanım
 
-### İnteraktif Mod (TUI)
+### TUI
 
 ```bash
 ./currency-converter
 ```
 
 Bu komut ile interaktif terminal arayüzü açılır:
-- ↑/↓ tuşları ile para birimi seçin
-- Klavyeden yazarak filtreleme yapın
-- Enter ile seçin
-- Miktar girin ve dönüşümü görün
+↑/↓ tuşları ile para birimi seçin
+Klavyeden yazarak filtreleme yapın
+Enter ile seçin
+Miktar girin ve dönüşümü görün
 
-### Hızlı Dönüşüm (CLI)
+### CLI
 
 ```bash
 # 100 USD'yi EUR'ya çevir
@@ -80,14 +79,6 @@ Bu komut ile interaktif terminal arayüzü açılır:
 ./currency-converter --help
 ```
 
-## 🔧 Yapılandırma
-
-### Environment Variables
-
-| Değişken | Açıklama | Zorunlu |
-|----------|----------|---------|
-| `EXCHANGE_RATE_API_KEY` | ExchangeRate-API API Key | ✅ Evet |
-
 ### .env Dosyası
 
 ```bash
@@ -98,9 +89,9 @@ cp .env.example .env
 EXCHANGE_RATE_API_KEY=your_api_key_here
 ```
 
-> ⚠️ **Önemli:** `.env` dosyasını asla Git'e commit etmeyin! `.gitignore` zaten bunu engelleyecek şekilde ayarlanmıştır.
+>**Önemli:** `.env` dosyasını asla Git'e commit etmeyin! `.gitignore` zaten bunu engelleyecek şekilde ayarlanmıştır.
 
-## 📁 Proje Yapısı
+## Proje Yapısı
 
 ```
 Currency-Converter/
@@ -120,18 +111,18 @@ Currency-Converter/
 └── README.md             # Bu dosya
 ```
 
-## 🛠️ Teknolojiler
+## Teknolojiler
 
-- [Go](https://golang.org/) - Programlama dili
+- [Go](https://golang.org/) - Language
 - [Cobra](https://github.com/spf13/cobra) - CLI framework
 - [Bubble Tea](https://github.com/charmbracelet/bubbletea) - TUI framework
 - [Lip Gloss](https://github.com/charmbracelet/lipgloss) - Terminal styling
-- [ExchangeRate-API](https://www.exchangerate-api.com/) - Döviz kuru API
+- [ExchangeRate-API](https://www.exchangerate-api.com/) - Exchange rate API
 
-## 📝 Lisans
+## Lisans
 
 MIT License - Detaylar için [LICENSE](LICENSE) dosyasına bakın.
 
-## 🤝 Katkıda Bulunma
+## Katkıda Bulunma
 
 Pull request'ler kabul edilir. Büyük değişiklikler için önce bir issue açarak ne yapmak istediğinizi tartışalım.
