@@ -1,4 +1,4 @@
-# 💱 Currency Converter
+# Currency Converter
 
 Terminal tabanlı, temiz arayüzlü para birimi dönüştürücü. Bubble Tea (TUI) ve Cobra CLI ile geliştirilmiştir.
 
